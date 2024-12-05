@@ -37,7 +37,6 @@ header .brand {
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: flex-end;
-		border-top: 1px solid var(--border-color-medium);
 		padding: 5px 0;
 		margin: 0 -3px;
 	}

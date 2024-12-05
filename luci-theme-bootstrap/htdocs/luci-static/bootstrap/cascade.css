@@ -150,6 +150,223 @@
 	color-scheme: dark;
 }
 
+:root[data-theme="darkblue"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 208;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 60%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #4da1c0;
+	--primary-color-medium: #448da6;
+	--primary-color-low: #3c7a8d;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: dark;
+
+	--background-color: hsl(208, 23%, 13%);
+	--background-color-high: hsl(208, 23%, 13%);
+	--background-color-low: hsl(208, 23%, 13%);
+
+	--component-background: hsl(208, 23%, 15%);
+	--component-background-hover: hsl(208, 23%, 23%);
+	--component-background-dark: hsl(208, 23%, 11.5%);
+
+	--header-background: hsla(208, 23%, 11%, 0.75);
+	--modal-background: hsla(208, 23%, 13%, 0.7);
+	--overlay-background: hsla(208, 23%, 2%, 0.6);
+
+	--border-color: hsl(208, 23%, 27%);
+	--divider-color: hsl(208, 23%, 18%);
+
+	--badge-background: hsla(208, 23%, 2%, 0.2);
+	--progressbar-background: hsl(208, 23%, 12%);
+
+	--primary-button-background: #58809b;
+	--success-button-background: #4b9970;
+}
+
+:root[data-theme="darkred"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 0;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 60%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #c04d4d;
+	--primary-color-medium: #a64444;
+	--primary-color-low: #8d3c3c;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: dark;
+
+	--background-color: hsl(0, 23%, 13%);
+	--background-color-high: hsl(0, 23%, 13%);
+	--background-color-low: hsl(0, 23%, 13%);
+
+	--component-background: hsl(0, 23%, 15%);
+	--component-background-hover: hsl(0, 23%, 23%);
+	--component-background-dark: hsl(0, 23%, 11.5%);
+
+	--header-background: hsla(0, 23%, 11%, 0.75);
+	--modal-background: hsla(0, 23%, 13%, 0.7);
+	--overlay-background: hsla(0, 23%, 2%, 0.6);
+
+	--border-color: hsl(0, 23%, 27%);
+	--divider-color: hsl(0, 23%, 18%);
+
+	--badge-background: hsla(0, 23%, 2%, 0.2);
+	--progressbar-background: hsl(0, 23%, 12%);
+
+	--primary-button-background: #9b5858;
+	--success-button-background: #704b4b;
+}
+
+:root[data-theme="lightblue"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 0;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 0%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #4da1c0;
+	--primary-color-medium: #448da6;
+	--primary-color-low: #3c7a8d;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: light;
+
+	--background-color: hsl(208, 23%, 87%);
+	--background-color-high: hsl(208, 23%, 87%);
+	--background-color-low: hsl(208, 23%, 87%);
+
+	--component-background: hsl(208, 23%, 85%);
+	--component-background-hover: hsl(208, 23%, 77%);
+	--component-background-dark: hsl(208, 23%, 88.5%);
+
+	--header-background: hsla(208, 23%, 89%, 0.75);
+	--modal-background: hsla(208, 23%, 87%, 0.7);
+	--overlay-background: hsla(208, 23%, 98%, 0.6);
+
+	--border-color: hsl(208, 23%, 73%);
+	--divider-color: hsl(208, 23%, 82%);
+
+	--badge-background: hsla(208, 23%, 98%, 0.2);
+	--progressbar-background: hsl(208, 23%, 88%);
+
+	--primary-button-background: #7ba5c0;
+	--success-button-background: #6eb990;
+}
+
+:root[data-theme="lightred"] {
+
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 0;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 0%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #c04d4d;
+	--primary-color-medium: #a64444;
+	--primary-color-low: #8d3c3c;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: light;
+
+	--background-color: hsl(0, 23%, 87%);
+	--background-color-high: hsl(0, 23%, 87%);
+	--background-color-low: hsl(0, 23%, 87%);
+
+	--component-background: hsl(0, 23%, 85%);
+	--component-background-hover: hsl(0, 23%, 77%);
+	--component-background-dark: hsl(0, 23%, 88.5%);
+
+	--header-background: hsla(0, 23%, 89%, 0.75);
+	--modal-background: hsla(0, 23%, 87%, 0.7);
+	--overlay-background: hsla(0, 23%, 98%, 0.6);
+
+	--border-color: hsl(0, 23%, 73%);
+	--divider-color: hsl(0, 23%, 82%);
+
+	--badge-background: hsla(0, 23%, 98%, 0.2);
+	--progressbar-background: hsl(0, 23%, 88%);
+
+	--primary-button-background: #c07b7b;
+	--success-button-background: #906e6e;
+}
+
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1064,21 +1281,20 @@ header {
 	top: 0;
 	z-index: 800;
 	overflow: visible;
-	color: #BFBFBF;
+	color: var(--text-color-medium);
 	margin: -5px -5px 15px -5px;
 	display: flex;
 }
 
 header a {
-	color: #bfbfbf;
-	text-shadow: 0 -1px 0 hsla(var(--border-color-low-hsl), .25);
+	color: var(--text-color-medium);
 }
 
 header .brand:hover,
 header ul .active>a {
 	background-color: #333;
 	background-color: rgba(255, 255, 255, 0.05);
-	color: #fff;
+	color: var(--text-color-medium);
 	text-decoration: none;
 }
 
@@ -1087,7 +1303,7 @@ header .brand {
 	display: block;
 	padding: 8px 20px 12px;
 	margin-left: -15px;
-	color: #fff;
+	color: var(--text-color-high);
 	font-size: 20px;
 	font-weight: 200;
 	line-height: 1;
@@ -1135,7 +1351,7 @@ header {
 }
 
 .nav a:hover {
-	color: #fff;
+	color: var(--text-color-medium);
 	text-decoration: none;
 }
 
@@ -1154,7 +1370,7 @@ header {
 }
 
 .nav .dropdown-menu a.menu {
-	color: #fff;
+	color: var(--text-color-medium);
 }
 
 .nav .dropdown-menu li a {
@@ -1166,11 +1382,11 @@ header {
 	background-color: #191919;
 	background-repeat: repeat-x;
 	background-image: linear-gradient(to bottom, #292929, #191919);
-	color: #fff;
+	color: var(--text-color-medium);
 }
 
 .nav .dropdown-menu .active a {
-	color: #fff;
+	color: var(--text-color-medium);
 }
 
 .nav .dropdown-menu li a {
@@ -1330,7 +1546,7 @@ a.menu:after {
 .cbi-tab-disabled[data-errors]::after {
 	content: attr(data-errors);
 	background: #c43c35;
-	color: #fff;
+	color: var(--text-color-medium);
 	height: 16px;
 	min-width: 16px;
 	border-radius: 8px;
@@ -2051,7 +2267,7 @@ header [data-indicator][data-clickable] {
 
 a.label:link,
 a.label:visited {
-	color: #fff;
+	color: var(--text-color-medium);
 }
 
 a.label:hover {
@@ -2280,7 +2496,7 @@ th[data-sort-direction="desc"]::after {
 }
 
 .ifacebox .ifacebox-head[style] {
-	text-shadow: 0 1px 1px hsla(var(--background-color-high-hsl), 0.75);
+	text-shadow: 0 1px 1px hsla(var(--background-color-high-hsl), 0.25);
 }
 
 .ifacebox .ifacebox-head.active {
@@ -2309,7 +2525,7 @@ th[data-sort-direction="desc"]::after {
 	padding: 2px;
 	background: linear-gradient(var(--background-color-high), var(--background-color-high) 25%, var(--background-color-medium));
 	color: var(--text-color-high);
-	text-shadow: 0 1px 1px hsla(var(--background-color-high-hsl), 0.75);
+	text-shadow: 0 1px 1px hsla(var(--background-color-high-hsl), 0.25);
 	border-radius: 4px;
 	box-shadow: inset 0 1px 0 hsla(var(--background-color-high-hsl), 0.05);
 	cursor: default;
@@ -2393,7 +2609,7 @@ th[data-sort-direction="desc"]::after {
 	display: inline-block;
 	white-space: nowrap;
 	color: var(--text-color-high);
-	text-shadow: 0 1px 1px hsla(var(--background-color-high-hsl), 0.75);
+	text-shadow: 0 1px 1px hsla(var(--background-color-high-hsl), 0.25);
 }
 
 .zonebadge>em,
@@ -2749,4 +2965,296 @@ div.cbi-value var.cbi-tooltip-container,
 [data-darkmode="true"] [data-page="admin-status-realtime-wireless"] #view>div>div>div>div>svg>line[style],
 [data-darkmode="true"] [data-page="admin-status-realtime-connections"] #view>div>div>div>svg>line[style] {
 	stroke: #fff !important;
+}
+
+body {
+	background: var(--background-color);
+	--background-color-high: var(--background-color-high);
+	--background-color-low: var(--background-color-low);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body,
+input,
+button {
+	font-family: "Segoe UI Variable Display", "Google Sans", "Product Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", sans-serif;
+}
+
+header .pull-right {
+	padding-top: 10px;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 350;
+}
+
+header .brand {
+	padding: 0px 20px 1px;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.label,
+header [data-indicator] {
+	font-size: 11px;
+	padding: 4px 8px;
+}
+
+.actions,
+.cbi-page-actions {
+	border: none;
+	padding: 8px 16px;
+}
+
+.cbi-section-node {
+	padding: 4px 8px;
+}
+
+table,
+.table,
+.ifacebox,
+.cbi-section-node,
+.create-item-input {
+	background: var(--component-background);
+	border-radius: 16px;
+}
+
+.cbi-dropdown>ul>li input[type="text"] {
+	height: 30px;
+	border-radius: 6px;
+	border: none;
+}
+
+.ifacebox .ifacebox-head {
+	border-radius: 16px 16px 0px 0px;
+	opacity: 0.9;
+}
+
+.cbi-rowstyle-2,
+.tr.table-titles,
+.tr.cbi-section-table-titles {
+	background: transparent;
+}
+
+header,
+.nav .dropdown-menu {
+	border: none;
+	backdrop-filter: blur(15px);
+	background-image: none;
+	box-shadow: none;
+	background: var(--header-background);
+}
+
+.nav .dropdown-menu {
+	background: var(--component-background-dark);
+}
+
+.cbi-dropdown[open]>ul.dropdown {
+	background: var(--component-background-hover);
+	border-radius: 0px 0px 6px 6px;
+	box-shadow: none;
+	border: none;
+}
+
+.btn,
+.cbi-button,
+.cbi-input-text,
+textarea,
+select,
+#localtime,
+.cbi-dropdown,
+.cbi-dropdown:not(.btn):not(.cbi-button),
+.cbi-page-actions .cbi-button-apply,
+.cbi-page-actions .cbi-button-apply+.cbi-button-save,
+.cbi-page-actions .cbi-button-negative+.cbi-button-save,
+.cbi-dynlist>.item {
+	border-radius: 6px;
+	background: var(--component-background-hover);
+	text-shadow: none;
+	padding: 2px 10px;
+	box-shadow: none;
+	color: var(--text-color-high);
+	border: none;
+}
+
+.cbi-dynlist>.item {
+	padding: 6px 10px;
+}
+
+.cbi-dynlist>.item::after {
+	background: none;
+	box-shadow: none;
+	border-left: solid 1px var(--border-color);
+}
+
+.label.notice,
+header [data-indicator][data-style="active"] {
+	background: var(--component-background-hover);
+}
+
+.dropdown-menu li a:hover {
+	background-image: none;
+	background: var(--component-background-hover) !important;
+}
+
+.cbi-page-actions .cbi-button-apply {
+	height: 30px;
+}
+
+.cbi-progressbar {
+	background: var(--progressbar-background);
+	border: none;
+	border-radius: 20px;
+}
+
+.cbi-progressbar>div {
+	border-radius: 20px;
+}
+
+.table .td,
+.table .th {
+	border-top: none;
+}
+
+.td.cbi-section-actions>*>*,
+.td.cbi-section-actions>*>form>* {
+	margin: 0px;
+	border-radius: 0;
+	border-right: solid 1px var(--background-color);
+}
+
+.td.cbi-section-actions>*>*:first-child {
+	border-radius: 6px 0px 0px 6px
+}
+
+.td.cbi-section-actions>*>*:last-child {
+	border-radius: 0px 6px 6px 0px;
+	border: none;
+}
+
+#modal_overlay {
+	background: var(--overlay-background);
+}
+
+.ifacebadge,
+.ifacebadge.large,
+.network-status-table .ifacebox-body .ifacebadge {
+	background: var(--badge-background);
+	padding: 8px;
+	border: none;
+	box-shadow: none;
+	border-radius: 6px;
+}
+
+.network-status-table {
+	width: calc(100% + 16px);
+	position: relative;
+	left: -8px;
+	margin-bottom: 8px;
+}
+
+.ifacebox .ifacebox-head.active {
+	background: none;
+	border: none;
+	color: var(--text-color-high);
+	text-shadow: none;
+}
+
+.network-status-table .ifacebox {
+	border: none;
+	box-shadow: none;
+	padding: 8px;
+}
+
+.cbi-tabmenu {
+	background: none;
+}
+
+.tabs>li:not(.active),
+.cbi-tabmenu>.cbi-tab-disabled {
+	background: var(--component-background);
+	border: none;
+	border-radius: 0px;
+}
+
+.tabs>li,
+.cbi-tabmenu>li {
+	border: none;
+	margin: 0px;
+	background: var(--component-background-hover);
+	border-radius: 0px;
+	color: var(--text-color-high);
+	padding: 6px 8px;
+	font-size: 14px;
+	transition: background 200ms ease-in-out;
+	height: 32px;
+}
+
+.tabs>li:last-child,
+.cbi-tabmenu>li:last-child {
+	border-radius: 0px 6px 6px 0px;
+}
+
+.tabs>li:first-child,
+.cbi-tabmenu>li:first-child {
+	border-radius: 6px 0px 0px 6px;
+}
+
+.tabs,
+.cbi-tabmenu {
+	justify-content: center;
+}
+
+.cbi-section-node .tabs>li:not(.active),
+.cbi-section-node .cbi-tabmenu>.cbi-tab,
+.cbi-section-node .cbi-tabmenu>.cbi-tab-disabled {
+	background: var(--divider-color);
+}
+
+.modal {
+	background: var(--modal-background);
+	box-shadow: none;
+	border-radius: 16px;
+	backdrop-filter: blur(20px);
+}
+
+input[type="text"]+.cbi-button,
+input[type="password"]+.cbi-button,
+select+.cbi-button {
+	margin-left: -6px;
+	border-radius: 0 6px 6px 0
+}
+
+.cbi-section h3 {
+	padding-left: 16px;
+}
+
+.cbi-modal h4 {
+	text-align: center;
+}
+
+form .clearfix,
+.cbi-value {
+	margin: 16px 0px;
+}
+
+.cbi-page-actions .cbi-button-apply+.cbi-button-save,
+.cbi-page-actions .cbi-button-negative+.cbi-button-save {
+	background: var(--success-button-background);
+}
+
+.btn.primary,
+.cbi-button-action.important,
+.cbi-page-actions .cbi-button-apply,
+.cbi-section-actions .cbi-button-edit {
+	background: var(--primary-button-background);
+}
+
+.cbi-dropdown[open]>ul.dropdown>li {
+	border: none;
+	padding: 6px 8px;
+	border-bottom: solid 1px var(--divider-color);
 }

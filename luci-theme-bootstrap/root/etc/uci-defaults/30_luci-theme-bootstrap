@@ -20,6 +20,10 @@ fi
 
 set_opt themes.BootstrapDark /luci-static/bootstrap-dark
 set_opt themes.BootstrapLight /luci-static/bootstrap-light
+set_opt themes.BootstrapDarkBlue /luci-static/bootstrap-darkblue
+set_opt themes.BootstrapLightBlue /luci-static/bootstrap-lightblue
+set_opt themes.BootstrapDarkRed /luci-static/bootstrap-darkred
+set_opt themes.BootstrapLightRed /luci-static/bootstrap-lightred
 
 if [ $changed = 1 ]; then
 	uci commit luci

@@ -10,12 +10,16 @@
 
 	const boardinfo = ubus.call('system', 'board');
 	const darkpref = (theme == 'bootstrap-dark' ? 'true' : (theme == 'bootstrap-light' ? 'false' : null));
+	const themepref = (theme == 'bootstrap-darkblue' ? 'darkblue' : 
+		(theme == 'bootstrap-darkred' ? 'darkred' :
+		(theme == 'bootstrap-lightblue' ? 'lightblue' :
+		(theme == 'bootstrap-lightred' ? 'lightred' : null))));
 
 	http.prepare_content('text/html; charset=UTF-8');
 -%}
 
 <!DOCTYPE html>
-<html lang="{{ dispatcher.lang }}" {{ darkpref ? `data-darkmode="${darkpref}"` : '' }}>
+<html lang="{{ dispatcher.lang }}" {{ darkpref ? `data-darkmode="${darkpref}"` : '' }} {{ themepref ? `data-theme="${themepref}"` : '' }}>
 	<head>
 		<meta charset="utf-8">
 		<title>{{ striptags(`${boardinfo.hostname ?? '?'}${node ? ` - ${node.title}` : ''}`) }} - LuCI</title>

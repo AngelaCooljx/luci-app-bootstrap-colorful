@@ -17,6 +17,10 @@ define Package/luci-theme-bootstrap/postrm
 	uci -q delete luci.themes.Bootstrap
 	uci -q delete luci.themes.BootstrapDark
 	uci -q delete luci.themes.BootstrapLight
+	uci -q delete luci.themes.BootstrapDarkBlue
+	uci -q delete luci.themes.BootstrapLightBlue
+	uci -q delete luci.themes.BootstrapDarkRed
+	uci -q delete luci.themes.BootstrapLightRed
 	uci commit luci
 }
 endef
