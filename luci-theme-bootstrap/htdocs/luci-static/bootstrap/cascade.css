@@ -258,6 +258,222 @@
 	--success-button-background: #704b4b;
 }
 
+:root[data-theme="darkgreen"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 120;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 60%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #4dc07b;
+	--primary-color-medium: #44a666;
+	--primary-color-low: #3c8d59;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: dark;
+
+	--background-color: hsl(120, 23%, 13%);
+	--background-color-high: hsl(120, 23%, 13%);
+	--background-color-low: hsl(120, 23%, 13%);
+
+	--component-background: hsl(120, 23%, 15%);
+	--component-background-hover: hsl(120, 23%, 23%);
+	--component-background-dark: hsl(120, 23%, 11.5%);
+
+	--header-background: hsla(120, 23%, 11%, 0.75);
+	--modal-background: hsla(120, 23%, 13%, 0.7);
+	--overlay-background: hsla(120, 23%, 2%, 0.6);
+
+	--border-color: hsl(120, 23%, 27%);
+	--divider-color: hsl(120, 23%, 18%);
+
+	--badge-background: hsla(120, 23%, 2%, 0.2);
+	--progressbar-background: hsl(120, 23%, 12%);
+
+	--primary-button-background: #589b6e;
+	--success-button-background: #4b9957;
+}
+
+:root[data-theme="darkyellow"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 60;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 60%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #c0b44d;
+	--primary-color-medium: #a69c44;
+	--primary-color-low: #8d853c;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: dark;
+
+	--background-color: hsl(60, 23%, 13%);
+	--background-color-high: hsl(60, 23%, 13%);
+	--background-color-low: hsl(60, 23%, 13%);
+
+	--component-background: hsl(60, 23%, 15%);
+	--component-background-hover: hsl(60, 23%, 23%);
+	--component-background-dark: hsl(60, 23%, 11.5%);
+
+	--header-background: hsla(60, 23%, 11%, 0.75);
+	--modal-background: hsla(60, 23%, 13%, 0.7);
+	--overlay-background: hsla(60, 23%, 2%, 0.6);
+
+	--border-color: hsl(60, 23%, 27%);
+	--divider-color: hsl(60, 23%, 18%);
+
+	--badge-background: hsla(60, 23%, 2%, 0.2);
+	--progressbar-background: hsl(60, 23%, 12%);
+
+	--primary-button-background: #9b9458;
+	--success-button-background: #70704b;
+}
+
+:root[data-theme="darkorange"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 30;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 60%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #c0824d;
+	--primary-color-medium: #a67144;
+	--primary-color-low: #8d613c;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: dark;
+
+	--background-color: hsl(30, 23%, 13%);
+	--background-color-high: hsl(30, 23%, 13%);
+	--background-color-low: hsl(30, 23%, 13%);
+
+	--component-background: hsl(30, 23%, 15%);
+	--component-background-hover: hsl(30, 23%, 23%);
+	--component-background-dark: hsl(30, 23%, 11.5%);
+
+	--header-background: hsla(30, 23%, 11%, 0.75);
+	--modal-background: hsla(30, 23%, 13%, 0.7);
+	--overlay-background: hsla(30, 23%, 2%, 0.6);
+
+	--border-color: hsl(30, 23%, 27%);
+	--divider-color: hsl(30, 23%, 18%);
+
+	--badge-background: hsla(30, 23%, 2%, 0.2);
+	--progressbar-background: hsl(30, 23%, 12%);
+
+	--primary-button-background: #9b7558;
+	--success-button-background: #70584b;
+}
+
+:root[data-theme="darkpurple"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 270;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 60%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #9d4dc0;
+	--primary-color-medium: #8744a6;
+	--primary-color-low: #743c8d;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: dark;
+
+	--background-color: hsl(270, 23%, 13%);
+	--background-color-high: hsl(270, 23%, 13%);
+	--background-color-low: hsl(270, 23%, 13%);
+
+	--component-background: hsl(270, 23%, 15%);
+	--component-background-hover: hsl(270, 23%, 23%);
+	--component-background-dark: hsl(270, 23%, 11.5%);
+
+	--header-background: hsla(270, 23%, 11%, 0.75);
+	--modal-background: hsla(270, 23%, 13%, 0.7);
+	--overlay-background: hsla(270, 23%, 2%, 0.6);
+
+	--border-color: hsl(270, 23%, 27%);
+	--divider-color: hsl(270, 23%, 18%);
+
+	--badge-background: hsla(270, 23%, 2%, 0.2);
+	--progressbar-background: hsl(270, 23%, 12%);
+
+	--primary-button-background: #80589b;
+	--success-button-background: #634b70;
+}
+
 :root[data-theme="lightblue"] {
 	--background-color-delta-l-sign: 1;
 	--background-color-h: 0;
@@ -365,6 +581,222 @@
 
 	--primary-button-background: #c07b7b;
 	--success-button-background: #906e6e;
+}
+
+:root[data-theme="lightgreen"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 120;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 0%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #4dc07b;
+	--primary-color-medium: #44a666;
+	--primary-color-low: #3c8d59;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: light;
+
+	--background-color: hsl(120, 23%, 87%);
+	--background-color-high: hsl(120, 23%, 87%);
+	--background-color-low: hsl(120, 23%, 87%);
+
+	--component-background: hsl(120, 23%, 85%);
+	--component-background-hover: hsl(120, 23%, 77%);
+	--component-background-dark: hsl(120, 23%, 88.5%);
+
+	--header-background: hsla(120, 23%, 89%, 0.75);
+	--modal-background: hsla(120, 23%, 87%, 0.7);
+	--overlay-background: hsla(120, 23%, 98%, 0.6);
+
+	--border-color: hsl(120, 23%, 73%);
+	--divider-color: hsl(120, 23%, 82%);
+
+	--badge-background: hsla(120, 23%, 98%, 0.2);
+	--progressbar-background: hsl(120, 23%, 88%);
+
+	--primary-button-background: #7bc09b;
+	--success-button-background: #6eb97a;
+}
+
+:root[data-theme="lightyellow"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 60;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 0%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #c0b44d;
+	--primary-color-medium: #a69c44;
+	--primary-color-low: #8d853c;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: light;
+
+	--background-color: hsl(60, 23%, 87%);
+	--background-color-high: hsl(60, 23%, 87%);
+	--background-color-low: hsl(60, 23%, 87%);
+
+	--component-background: hsl(60, 23%, 85%);
+	--component-background-hover: hsl(60, 23%, 77%);
+	--component-background-dark: hsl(60, 23%, 88.5%);
+
+	--header-background: hsla(60, 23%, 89%, 0.75);
+	--modal-background: hsla(60, 23%, 87%, 0.7);
+	--overlay-background: hsla(60, 23%, 98%, 0.6);
+
+	--border-color: hsl(60, 23%, 73%);
+	--divider-color: hsl(60, 23%, 82%);
+
+	--badge-background: hsla(60, 23%, 98%, 0.2);
+	--progressbar-background: hsl(60, 23%, 88%);
+
+	--primary-button-background: #c0b97b;
+	--success-button-background: #90906e;
+}
+
+:root[data-theme="lightorange"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 30;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 0%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #c0824d;
+	--primary-color-medium: #a67144;
+	--primary-color-low: #8d613c;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: light;
+
+	--background-color: hsl(30, 23%, 87%);
+	--background-color-high: hsl(30, 23%, 87%);
+	--background-color-low: hsl(30, 23%, 87%);
+
+	--component-background: hsl(30, 23%, 85%);
+	--component-background-hover: hsl(30, 23%, 77%);
+	--component-background-dark: hsl(30, 23%, 88.5%);
+
+	--header-background: hsla(30, 23%, 89%, 0.75);
+	--modal-background: hsla(30, 23%, 87%, 0.7);
+	--overlay-background: hsla(30, 23%, 98%, 0.6);
+
+	--border-color: hsl(30, 23%, 73%);
+	--divider-color: hsl(30, 23%, 82%);
+
+	--badge-background: hsla(30, 23%, 98%, 0.2);
+	--progressbar-background: hsl(30, 23%, 88%);
+
+	--primary-button-background: #c0957b;
+	--success-button-background: #90766e;
+}
+
+:root[data-theme="lightpurple"] {
+	--background-color-delta-l-sign: 1;
+	--background-color-h: 270;
+	--background-color-s: 23%;
+	--background-color-l: 13%;
+	--text-color-delta-l-sign: 1;
+	--text-color-h: 0;
+	--text-color-s: 0%;
+	--text-color-l: 0%;
+	--border-color-delta-l-sign: 1;
+
+	--primary-color-high: #9d4dc0;
+	--primary-color-medium: #8744a6;
+	--primary-color-low: #743c8d;
+
+	--error-color-high-rgb: 209, 86, 83;
+	--error-color-medium: #bf4e4c;
+	--error-color-low: #b14946;
+
+	--success-color-high-rgb: 0, 166, 108;
+	--success-color-medium: #00945e;
+	--success-color-low: #008252;
+
+	--warn-color-high: #a69461;
+	--warn-color-medium: #a68d45;
+	--warn-color-low: #a68732;
+	--on-warn-color: var(--background-color-high);
+
+	--disabled-opacity: .4;
+
+	color-scheme: light;
+
+	--background-color: hsl(270, 23%, 87%);
+	--background-color-high: hsl(270, 23%, 87%);
+	--background-color-low: hsl(270, 23%, 87%);
+
+	--component-background: hsl(270, 23%, 85%);
+	--component-background-hover: hsl(270, 23%, 77%);
+	--component-background-dark: hsl(270, 23%, 88.5%);
+
+	--header-background: hsla(270, 23%, 89%, 0.75);
+	--modal-background: hsla(270, 23%, 87%, 0.7);
+	--overlay-background: hsla(270, 23%, 98%, 0.6);
+
+	--border-color: hsl(270, 23%, 73%);
+	--divider-color: hsl(270, 23%, 82%);
+
+	--badge-background: hsla(270, 23%, 98%, 0.2);
+	--progressbar-background: hsl(270, 23%, 88%);
+
+	--primary-button-background: #a77bc0;
+	--success-button-background: #826e90;
 }
 
 /* Reset.less

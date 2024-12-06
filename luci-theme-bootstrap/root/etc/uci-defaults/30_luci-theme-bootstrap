@@ -17,13 +17,20 @@ set_opt themes.Bootstrap /luci-static/bootstrap
 if [ "$PKG_UPGRADE" != 1 ] && [ $changed = 1 ]; then
 	set_opt main.mediaurlbase /luci-static/bootstrap
 fi
-
 set_opt themes.BootstrapDark /luci-static/bootstrap-dark
 set_opt themes.BootstrapLight /luci-static/bootstrap-light
 set_opt themes.BootstrapDarkBlue /luci-static/bootstrap-darkblue
 set_opt themes.BootstrapLightBlue /luci-static/bootstrap-lightblue
 set_opt themes.BootstrapDarkRed /luci-static/bootstrap-darkred
 set_opt themes.BootstrapLightRed /luci-static/bootstrap-lightred
+set_opt themes.BootstrapDarkGreen /luci-static/bootstrap-darkgreen
+set_opt themes.BootstrapLightGreen /luci-static/bootstrap-lightgreen
+set_opt themes.BootstrapDarkYellow /luci-static/bootstrap-darkyellow
+set_opt themes.BootstrapLightYellow /luci-static/bootstrap-lightyellow
+set_opt themes.BootstrapDarkOrange /luci-static/bootstrap-darkorange
+set_opt themes.BootstrapLightOrange /luci-static/bootstrap-lightorange
+set_opt themes.BootstrapDarkPurple /luci-static/bootstrap-darkpurple
+set_opt themes.BootstrapLightPurple /luci-static/bootstrap-lightpurple
 
 if [ $changed = 1 ]; then
 	uci commit luci

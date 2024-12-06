@@ -10,10 +10,21 @@
 
 	const boardinfo = ubus.call('system', 'board');
 	const darkpref = (theme == 'bootstrap-dark' ? 'true' : (theme == 'bootstrap-light' ? 'false' : null));
-	const themepref = (theme == 'bootstrap-darkblue' ? 'darkblue' : 
-		(theme == 'bootstrap-darkred' ? 'darkred' :
-		(theme == 'bootstrap-lightblue' ? 'lightblue' :
-		(theme == 'bootstrap-lightred' ? 'lightred' : null))));
+	let themepref = null;
+	switch (theme) {
+		case 'bootstrap-darkblue': themepref = 'darkblue'; break;
+		case 'bootstrap-darkred': themepref = 'darkred'; break;
+		case 'bootstrap-darkgreen': themepref = 'darkgreen'; break;
+		case 'bootstrap-darkyellow': themepref = 'darkyellow'; break;
+		case 'bootstrap-darkorange': themepref = 'darkorange'; break;
+		case 'bootstrap-darkpurple': themepref = 'darkpurple'; break;
+		case 'bootstrap-lightblue': themepref = 'lightblue'; break;
+		case 'bootstrap-lightred': themepref = 'lightred'; break;
+		case 'bootstrap-lightgreen': themepref = 'lightgreen'; break;
+		case 'bootstrap-lightyellow': themepref = 'lightyellow'; break;
+		case 'bootstrap-lightorange': themepref = 'lightorange'; break;
+		case 'bootstrap-lightpurple': themepref = 'lightpurple'; break;
+	}
 
 	http.prepare_content('text/html; charset=UTF-8');
 -%}
