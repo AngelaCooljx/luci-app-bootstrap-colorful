@@ -1807,7 +1807,6 @@ header {
 
 .nav .dropdown-menu li a {
 	color: #999;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .nav .dropdown-menu li a:hover {
@@ -1880,7 +1879,6 @@ a.menu:after {
 	font-weight: normal;
 	line-height: 18px;
 	color: #808080;
-	text-shadow: 0 1px 0 #fff;
 }
 
 .dropdown-menu a:hover {
