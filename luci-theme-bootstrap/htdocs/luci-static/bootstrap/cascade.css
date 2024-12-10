@@ -14,7 +14,7 @@
 /* Variables
  * --------- */
 
-:root {
+ :root {
 	--background-color-delta-l-sign: -1;
 	--background-color-h: 0;
 	--background-color-s: 0%;
@@ -936,7 +936,7 @@ textarea {
  * ------------------------------------------------------------------------------------------- */
 body {
 	background-color: var(--background-color-high);
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Segoe UI Variable Display", "Google Sans", "Product Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 18px;
@@ -946,6 +946,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow-y: scroll;
+	background: var(--background-color);
+	--background-color-high: var(--background-color-high);
+	--background-color-low: var(--background-color-low);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -1207,10 +1212,16 @@ select {
 	line-height: normal;
 }
 
+body,
+input,
+button {
+	font-family: "Segoe UI Variable Display", "Google Sans", "Product Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", sans-serif;
+}
+
 .cbi-value {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 18px;
+	margin: 16px 0px 18px;
 }
 
 .cbi-value-field {
@@ -1230,6 +1241,10 @@ select {
 .cbi-value>.cbi-section,
 .cbi-value>.cbi-tblsection {
 	width: 100%;
+}
+
+.cbi-section h3 {
+	padding-left: 16px;
 }
 
 label>input[type="checkbox"],
@@ -1283,7 +1298,7 @@ select,
 	margin-bottom: 4px;
 	box-shadow: 0 0 2px var(--border-color-high);
 	background: var(--background-color-high);
-	padding: 6px 2em 6px 4px;
+	padding: 6px 10px;
 	border: 1px solid var(--border-color-high);
 	border-radius: 3px;
 	color: var(--text-color-high);
@@ -1312,6 +1327,9 @@ select,
 	font-weight: bold;
 	color: #c44;
 	pointer-events: auto;
+	background: none;
+	box-shadow: none;
+	border-left: solid 1px var(--border-color);
 }
 
 /* indication line for drag-and-drop in UIDynamicList*/
@@ -1605,8 +1623,8 @@ textarea[readonly] {
 .cbi-page-actions {
 	background: var(--background-color-low);
 	margin-bottom: 18px;
-	padding: 17px 20px 18px 17px;
-	border-top: 1px solid var(--border-color-medium);
+	padding: 8px 16px;
+	border: none;
 	border-radius: 0 0 3px 3px;
 	text-align: right;
 }
@@ -1679,7 +1697,7 @@ textarea[readonly] {
 
 .table .td,
 .table .th {
-	border-top: 1px solid var(--border-color-medium);
+	border-top: none;
 }
 
 .tr.placeholder {
@@ -1733,18 +1751,19 @@ header ul .active>a {
 header .brand {
 	float: left;
 	display: block;
-	padding: 8px 20px 12px;
+	padding: 0px 20px 1px;
 	margin-left: -15px;
 	color: var(--text-color-high);
 	font-size: 20px;
 	font-weight: 200;
-	line-height: 1;
+	line-height: 40px;
 }
 
 header .pull-right {
 	margin-left: auto;
 	margin-right: 5px;
 	align-self: center;
+	padding-top: 10px;
 }
 
 header p {
@@ -1759,6 +1778,12 @@ header {
 	/* the redundant properties below work around a csstidy bug */
 	padding-left: calc((100% - 940px) / 2);
 	padding-right: calc((100% - 940px) / 2);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 350;
 }
 
 .nav {
@@ -1797,8 +1822,17 @@ header {
 	background: rgba(255, 255, 255, 0.05);
 }
 
+header,
 .nav .dropdown-menu {
-	background-color: #333;
+	border: none;
+	backdrop-filter: blur(15px);
+	background-image: none;
+	box-shadow: none;
+	background: var(--header-background);
+}
+
+.nav .dropdown-menu {
+	background: var(--component-background-dark);
 }
 
 .nav .dropdown-menu a.menu {
@@ -1810,9 +1844,9 @@ header {
 }
 
 .nav .dropdown-menu li a:hover {
-	background-color: #191919;
 	background-repeat: repeat-x;
-	background-image: linear-gradient(to bottom, #292929, #191919);
+	background-image: none;
+	background: var(--component-background-hover) !important;
 	color: var(--text-color-medium);
 }
 
@@ -1927,6 +1961,11 @@ a.menu:after {
 	background: linear-gradient(var(--tab-bar-background-color) 28px, var(--tab-inactive-border-color) 28px);
 	background-size: 1px 29px;
 	background-position: left bottom;
+	justify-content: center;
+}
+
+.cbi-tabmenu {
+	background: none;
 }
 
 .tabs>li,
@@ -1934,14 +1973,16 @@ a.menu:after {
 	flex: 0 1 auto;
 	display: flex;
 	align-items: center;
-	height: 25px;
+	height: 32px;
 	max-width: 48%;
-	margin: 4px 2px 0 2px;
-	background: var(--tab-active-background-color);
-	border: 1px solid var(--tab-active-border-color);
-	border-bottom: none;
-	border-radius: 4px 4px 0 0;
-	color: var(--primary-color-high);
+	margin: 0px;
+	padding: 6px 8px;
+	background: var(--component-background-hover);
+	border: none;
+	border-radius: 0px;
+	color: var(--text-color-high);
+	font-size: 14px;
+	transition: background 200ms ease-in-out;
 }
 
 .tabs>li>a,
@@ -1970,7 +2011,19 @@ a.menu:after {
 .tabs>li:not(.active),
 .cbi-tabmenu>.cbi-tab-disabled {
 	color: var(--tab-inactive-text-color);
-	background: linear-gradient(var(--tab-inactive-background-color) 90%, var(--tab-inactive-border-color) 100%);
+	background: var(--component-background);
+	border: none;
+	border-radius: 0px;
+}
+
+.tabs>li:last-child,
+.cbi-tabmenu>li:last-child {
+	border-radius: 0px 6px 6px 0px;
+}
+
+.tabs>li:first-child,
+.cbi-tabmenu>li:first-child {
+	border-radius: 6px 0px 0px 6px;
 }
 
 .cbi-tab-disabled[data-errors]::after {
@@ -1987,6 +2040,12 @@ a.menu:after {
 	flex-direction: column;
 	justify-content: center;
 	font-size: 12px;
+}
+
+.cbi-section-node .tabs>li:not(.active),
+.cbi-section-node .cbi-tabmenu>.cbi-tab,
+.cbi-section-node .cbi-tabmenu>.cbi-tab-disabled {
+	background: var(--divider-color);
 }
 
 .cbi-tabmenu.map {
@@ -2089,7 +2148,7 @@ footer ul.breadcrumb {
 	position: fixed;
 	top: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.7);
+	background: var(--overlay-background);
 	z-index: 900;
 	overflow: auto;
 	transition: opacity .125s ease-in;
@@ -2102,12 +2161,13 @@ footer ul.breadcrumb {
 	margin: 5em auto;
 	min-height: 32px;
 	max-width: 600px;
-	border-radius: 3px;
-	background: var(--background-color-high);
+	border-radius: 16px;
+	background: var(--modal-background);
 	border: 1px solid var(--border-color-low);
-	box-shadow: 0 0 3px var(--background-color-low);
+	box-shadow: none;
 	padding: 1em 1em .5em 1em;
 	min-width: 270px;
+	backdrop-filter: blur(20px);
 }
 
 .modal>* {
@@ -2272,12 +2332,16 @@ body.modal-overlay-active #modal_overlay {
 	margin-right: .4em;
 }
 
+.cbi-page-actions .cbi-button-apply {
+	height: 30px;
+}
+
 .btn.primary,
 .cbi-button-action.important,
 .cbi-page-actions .cbi-button-apply,
 .cbi-section-actions .cbi-button-edit {
 	--on-color: var(--on-primary-color);
-	background: linear-gradient(var(--primary-color-medium), var(--primary-color-low));
+	background: var(--primary-button-background);
 	border-color: var(--primary-color-high);
 }
 
@@ -2298,7 +2362,7 @@ body.modal-overlay-active #modal_overlay {
 .cbi-page-actions .cbi-button-negative+.cbi-button-save {
 	--on-color: var(--success-color-high);
 	border-color: var(--on-color);
-	background: var(--default-btn-background);
+	background: var(--success-button-background);
 }
 
 .cbi-dropdown {
@@ -2418,7 +2482,9 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .cbi-dropdown>ul>li input[type="text"] {
-	height: 20px;
+	height: 30px;
+	border-radius: 6px;
+	border: none;
 }
 
 .cbi-dropdown[open] {
@@ -2427,9 +2493,10 @@ body.modal-overlay-active #modal_overlay {
 
 .cbi-dropdown[open]>ul.dropdown {
 	display: block;
-	background: var(--background-color-low);
-	border: 1px solid #918e8c;
-	box-shadow: 0 0 4px #918e8c;
+	background: var(--component-background-hover);
+	border-radius: 0px 0px 6px 6px;
+	box-shadow: none;
+	border: none;
 	position: absolute;
 	z-index: 1100;
 	max-width: none;
@@ -2469,7 +2536,9 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .cbi-dropdown[open]>ul.dropdown>li {
-	border-bottom: 1px solid var(--border-color-high);
+	border: none;
+	padding: 6px 8px;
+	border-bottom: solid 1px var(--divider-color);
 }
 
 .cbi-dropdown[open]>ul.dropdown>li[selected] {
@@ -2533,13 +2602,13 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .cbi-progressbar {
-	border: 1px solid var(--border-color-high);
-	border-radius: 3px;
+	border: none;
+	border-radius: 20px;
 	position: relative;
 	min-width: 170px;
 	height: 8px;
 	margin: 1.4em 0 4px 0;
-	background: var(--background-color-medium);
+	background: var(--progressbar-background);
 }
 
 .cbi-progressbar>div {
@@ -2547,7 +2616,7 @@ body.modal-overlay-active #modal_overlay {
 	height: 100%;
 	transition: width .25s ease-in;
 	width: 0%;
-	border-radius: 2px;
+	border-radius: 20px;
 }
 
 .cbi-progressbar::before {
@@ -2650,7 +2719,7 @@ input[type=submit].btn::-moz-focus-inner {
 	background: linear-gradient(#fceec1, #eedc94);
 	border: 1px solid var(--border-color-low);
 	border-color: var(--border-color-high) var(--border-color-high) var(--border-color-low);
-	border-radius: 4px;
+	border-radius: 20px;
 	box-shadow: 1px 1px 1px var(--border-color-low);
 	white-space: unset;
 }
@@ -2679,8 +2748,8 @@ input[type=submit].btn::-moz-focus-inner {
 
 .label,
 header [data-indicator] {
-	padding: 3px 3px 2px;
-	font-size: 9.75px;
+	padding: 4px 8px;
+	font-size: 11px;
 	font-weight: bold;
 	color: var(--text-color-high);
 	text-transform: uppercase;
@@ -2722,7 +2791,7 @@ a.label:hover {
 .label.notice,
 header [data-indicator][data-style="active"] {
 	color: var(--on-primary-color);
-	background-color: var(--primary-color-high);
+	background: var(--component-background-hover);
 }
 
 /* LuCI specific items */
@@ -2811,6 +2880,13 @@ table table td,
 	min-width: auto;
 }
 
+input[type="text"]+.cbi-button,
+input[type="password"]+.cbi-button,
+select+.cbi-button {
+	margin-left: -6px;
+	border-radius: 0 6px 6px 0
+}
+
 .table.cbi-section-table .td.cbi-section-table-cell {
 	white-space: nowrap;
 	text-align: right;
@@ -2842,6 +2918,22 @@ table table td,
 	margin: 0;
 }
 
+.td.cbi-section-actions>*>*,
+.td.cbi-section-actions>*>form>* {
+	margin: 0px;
+	border-radius: 0;
+	border-right: solid 1px var(--background-color);
+}
+
+.td.cbi-section-actions>*>*:first-child {
+	border-radius: 6px 0px 0px 6px
+}
+
+.td.cbi-section-actions>*>*:last-child {
+	border-radius: 0px 6px 6px 0px;
+	border: none;
+}
+
 .table.valign-middle .td {
 	vertical-align: middle;
 }
@@ -2849,7 +2941,7 @@ table table td,
 .cbi-rowstyle-2,
 .tr.table-titles,
 .tr.cbi-section-table-titles {
-	background: var(--background-color-medium);
+	background: transparent;
 }
 
 th[data-sortable-row] {
@@ -2919,7 +3011,8 @@ th[data-sort-direction="desc"]::after {
 
 .ifacebox .ifacebox-head {
 	border-bottom: 1px solid var(--border-color-high);
-	border-radius: 3px 3px 0 0;
+	border-radius: 16px 16px 0px 0px;
+	opacity: 0.9;
 	padding: 2px;
 	background: #eee;
 	color: var(--text-color-high);
@@ -2930,8 +3023,10 @@ th[data-sort-direction="desc"]::after {
 }
 
 .ifacebox .ifacebox-head.active {
-	background: var(--primary-color-high);
-	color: var(--on-primary-color);
+	background: none;
+	border: none;
+	color: var(--text-color-high);
+	text-shadow: none;
 }
 
 [data-darkmode="true"] .zonebadge[style],
@@ -2976,11 +3071,18 @@ th[data-sort-direction="desc"]::after {
 .network-status-table {
 	display: flex;
 	flex-wrap: wrap;
+	width: calc(100% + 16px);
+	position: relative;
+	left: -8px;
+	margin-bottom: 8px;
 }
 
 .network-status-table .ifacebox {
 	margin: .5em;
 	flex-grow: 1;
+	border: none;
+	box-shadow: none;
+	padding: 8px;
 }
 
 .network-status-table .ifacebox-body {
@@ -3017,6 +3119,16 @@ th[data-sort-direction="desc"]::after {
 	padding: .25em;
 	min-width: 220px;
 	margin: .125em;
+}
+
+.ifacebadge,
+.ifacebadge.large,
+.network-status-table .ifacebox-body .ifacebadge {
+	background: var(--badge-background);
+	padding: 8px;
+	border: none;
+	box-shadow: none;
+	border-radius: 6px;
 }
 
 .ifacebadge.large {
@@ -3087,6 +3199,10 @@ div.cbi-value var.cbi-tooltip-container,
 #modal_overlay>.modal.uci-dialog,
 #modal_overlay>.modal.cbi-modal {
 	max-width: 900px;
+}
+
+.cbi-modal h4 {
+	text-align: center;
 }
 
 #modal_overlay>.modal.login>button.important {
@@ -3396,49 +3512,6 @@ div.cbi-value var.cbi-tooltip-container,
 [data-darkmode="true"] [data-page="admin-status-realtime-connections"] #view>div>div>div>svg>line[style] {
 	stroke: #fff !important;
 }
-
-body {
-	background: var(--background-color);
-	--background-color-high: var(--background-color-high);
-	--background-color-low: var(--background-color-low);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-body,
-input,
-button {
-	font-family: "Segoe UI Variable Display", "Google Sans", "Product Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", sans-serif;
-}
-
-header .pull-right {
-	padding-top: 10px;
-}
-
-h1,
-h2,
-h3 {
-	font-weight: 350;
-}
-
-header .brand {
-	padding: 0px 20px 1px;
-	font-size: 20px;
-	line-height: 40px;
-}
-
-.label,
-header [data-indicator] {
-	font-size: 11px;
-	padding: 4px 8px;
-}
-
-.actions,
-.cbi-page-actions {
-	border: none;
-	padding: 8px 16px;
-}
-
 .cbi-section-node {
 	padding: 4px 8px;
 }
@@ -3450,43 +3523,6 @@ table,
 .create-item-input {
 	background: var(--component-background);
 	border-radius: 16px;
-}
-
-.cbi-dropdown>ul>li input[type="text"] {
-	height: 30px;
-	border-radius: 6px;
-	border: none;
-}
-
-.ifacebox .ifacebox-head {
-	border-radius: 16px 16px 0px 0px;
-	opacity: 0.9;
-}
-
-.cbi-rowstyle-2,
-.tr.table-titles,
-.tr.cbi-section-table-titles {
-	background: transparent;
-}
-
-header,
-.nav .dropdown-menu {
-	border: none;
-	backdrop-filter: blur(15px);
-	background-image: none;
-	box-shadow: none;
-	background: var(--header-background);
-}
-
-.nav .dropdown-menu {
-	background: var(--component-background-dark);
-}
-
-.cbi-dropdown[open]>ul.dropdown {
-	background: var(--component-background-hover);
-	border-radius: 0px 0px 6px 6px;
-	box-shadow: none;
-	border: none;
 }
 
 .btn,
@@ -3508,183 +3544,4 @@ select,
 	box-shadow: none;
 	color: var(--text-color-high);
 	border: none;
-}
-
-.cbi-dynlist>.item {
-	padding: 6px 10px;
-}
-
-.cbi-dynlist>.item::after {
-	background: none;
-	box-shadow: none;
-	border-left: solid 1px var(--border-color);
-}
-
-.label.notice,
-header [data-indicator][data-style="active"] {
-	background: var(--component-background-hover);
-}
-
-.dropdown-menu li a:hover {
-	background-image: none;
-	background: var(--component-background-hover) !important;
-}
-
-.cbi-page-actions .cbi-button-apply {
-	height: 30px;
-}
-
-.cbi-progressbar {
-	background: var(--progressbar-background);
-	border: none;
-	border-radius: 20px;
-}
-
-.cbi-progressbar>div {
-	border-radius: 20px;
-}
-
-.table .td,
-.table .th {
-	border-top: none;
-}
-
-.td.cbi-section-actions>*>*,
-.td.cbi-section-actions>*>form>* {
-	margin: 0px;
-	border-radius: 0;
-	border-right: solid 1px var(--background-color);
-}
-
-.td.cbi-section-actions>*>*:first-child {
-	border-radius: 6px 0px 0px 6px
-}
-
-.td.cbi-section-actions>*>*:last-child {
-	border-radius: 0px 6px 6px 0px;
-	border: none;
-}
-
-#modal_overlay {
-	background: var(--overlay-background);
-}
-
-.ifacebadge,
-.ifacebadge.large,
-.network-status-table .ifacebox-body .ifacebadge {
-	background: var(--badge-background);
-	padding: 8px;
-	border: none;
-	box-shadow: none;
-	border-radius: 6px;
-}
-
-.network-status-table {
-	width: calc(100% + 16px);
-	position: relative;
-	left: -8px;
-	margin-bottom: 8px;
-}
-
-.ifacebox .ifacebox-head.active {
-	background: none;
-	border: none;
-	color: var(--text-color-high);
-	text-shadow: none;
-}
-
-.network-status-table .ifacebox {
-	border: none;
-	box-shadow: none;
-	padding: 8px;
-}
-
-.cbi-tabmenu {
-	background: none;
-}
-
-.tabs>li:not(.active),
-.cbi-tabmenu>.cbi-tab-disabled {
-	background: var(--component-background);
-	border: none;
-	border-radius: 0px;
-}
-
-.tabs>li,
-.cbi-tabmenu>li {
-	border: none;
-	margin: 0px;
-	background: var(--component-background-hover);
-	border-radius: 0px;
-	color: var(--text-color-high);
-	padding: 6px 8px;
-	font-size: 14px;
-	transition: background 200ms ease-in-out;
-	height: 32px;
-}
-
-.tabs>li:last-child,
-.cbi-tabmenu>li:last-child {
-	border-radius: 0px 6px 6px 0px;
-}
-
-.tabs>li:first-child,
-.cbi-tabmenu>li:first-child {
-	border-radius: 6px 0px 0px 6px;
-}
-
-.tabs,
-.cbi-tabmenu {
-	justify-content: center;
-}
-
-.cbi-section-node .tabs>li:not(.active),
-.cbi-section-node .cbi-tabmenu>.cbi-tab,
-.cbi-section-node .cbi-tabmenu>.cbi-tab-disabled {
-	background: var(--divider-color);
-}
-
-.modal {
-	background: var(--modal-background);
-	box-shadow: none;
-	border-radius: 16px;
-	backdrop-filter: blur(20px);
-}
-
-input[type="text"]+.cbi-button,
-input[type="password"]+.cbi-button,
-select+.cbi-button {
-	margin-left: -6px;
-	border-radius: 0 6px 6px 0
-}
-
-.cbi-section h3 {
-	padding-left: 16px;
-}
-
-.cbi-modal h4 {
-	text-align: center;
-}
-
-form .clearfix,
-.cbi-value {
-	margin: 16px 0px;
-}
-
-.cbi-page-actions .cbi-button-apply+.cbi-button-save,
-.cbi-page-actions .cbi-button-negative+.cbi-button-save {
-	background: var(--success-button-background);
-}
-
-.btn.primary,
-.cbi-button-action.important,
-.cbi-page-actions .cbi-button-apply,
-.cbi-section-actions .cbi-button-edit {
-	background: var(--primary-button-background);
-}
-
-.cbi-dropdown[open]>ul.dropdown>li {
-	border: none;
-	padding: 6px 8px;
-	border-bottom: solid 1px var(--divider-color);
 }
